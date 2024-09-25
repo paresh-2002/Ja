@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap");
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: en;
+        background-color: rgb(20, 20, 20);
+      }
+      .container {
+        width: 375px;
+        height: 812px;
+        margin: auto;
+        margin-top: 100px;
+        border: 1px solid rgb(207, 200, 200);
+        border-radius: 2px;
+        background-color: white;
+      }
+      .title {
+        display: flex;
+        padding: 15px;
+        gap: 130px;
+        border-bottom: 1px solid #ededed;
+      }
+      .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 24px;
+        padding-bottom: 12px;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .profile-details {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .profile-text {
+        color: #0d99ff;
+        font-family: sans;
+        margin-top: 12px;
+      }
+      .details {
+        display: flex;
+        padding: 14px;
+      }
+      .details h4 {
+        width: 50%;
+      }
+      .links ul {
+        list-style-type: none;
+      }
+      .bottom-navbar {
+        border-top: 1px solid #ededed;
+      }
+      .bottom-navbar ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      footer {
+        margin-top: 60%;
+      }
+
+      .line {
+        width: 134px;
+        height: 5px;
+        background-color: black;
+        border-radius: 6px;
+        margin: 23px 120px;
+      }
+      .right-icon {
+        padding-left: 12px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    .profile a{
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="title">
+          <div>
+            <img src="./Images/Icons/chevron_left_thin.png" alt="" />
+          </div>
+          <h2>Title</h2>
+        </div>
+      </header>
+      <div class="profile">
+        <img src="./images/Avatar.png" alt="" />
+        <a href="#"><p class="profile-text">Edit Profile Image</p></a>
+      </div>
+      <div class="profile-details">
+        <div class="details">
+          <h4>Name:</h4>
+          <div class="right-icon">
+            <p>Helena Hills</p>
+            <div>
+              <img src="./Images/Icons/Vector.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <h4>UserName:</h4>
+          <div class="right-icon">
+            <p>@username</p>
+            <div>
+              <img src="./Images/Icons/Vector.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <h4>Email:</h4>
+          <div class="right-icon">
+            <p>name@domain.com</p>
+            <div>
+              <img src="./Images/Icons/Vector.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="details links">
+          <h4>Link:</h4>
+          <div class="right-icon">
+            <ul>
+              <li>Website</li>
+              <li>mylink.net</li>
+              <li>yourlink.net</li>
+            </ul>
+          </div>
+        </div>
+        <div class="details">
+          <h4>Bio:</h4>
+          <div class="right-icon">
+            <p>A Description of this user</p>
+            <div>
+              <img src="./Images/Icons/Vector.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <nav class="bottom-navbar">
+          <ul>
+            <li><img src="./Images/Icons/home.png" alt="Home" /></li>
+            <li><img src="./Images/Icons/search.png" alt="Search" /></li>
+            <li><img src="./Images/Icons/create.png" alt="Create" /></li>
+            <li><img src="./Images/Icons/bell.png" alt="Bell" /></li>
+            <li>
+              <img
+                src="./Images/Icons/Profile image.png"
+                alt="Profile"
+                class="av-profile"
+              />
+            </li>
+          </ul>
+        </nav>
+        <div class="line"></div>
+      </footer>
+    </div>
+  </body>
+</html>

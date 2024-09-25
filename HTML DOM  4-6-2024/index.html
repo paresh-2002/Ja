@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* #container {
+            width: 300px;
+            height: 300px;
+            background:black;
+            position: relative;
+        }
+        #animation{
+            width: 80px;
+            height: 80px;
+            background-color:white;
+            position:absolute;
+            border-radius: 50%;
+            
+        } */
+
+      #myDiv1,
+      #myDiv2 {
+        background-color: coral;
+        padding: 10px;
+        color: white;
+      }
+
+      #myP1,
+      #myP2 {
+        background-color: white;
+        font-size: 20px;
+        border: 1px solid;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Events -->
+    <!-- <div onload="onLoad()">
+       <div id="container" >
+        <div id="animation"></div>
+    </div>
+    <div onmouseover = 'mOver(this)' onmouseout = 'mOut(this)'  style="background-color:#D94A38;width:110px;height:20px;padding:20px;">Mouse Over</div><br>
+    <div onmousedown = 'mOver(this)' onmouseup = 'mOut(this)'  style="background-color:#D94A38;width:110px;height:20px;padding:20px;">Click Me</div><br>
+    Enter FirstName : <input type="text" name="name" id="fName" oninput = 'upperCase()' onfocus="onFocus()"><br><br>
+    Enter LastName : <input type="text" name="name" id="lName" onchange = 'upperCase()'>
+    <p id="demo"></p>
+    <button onclick="toMove()">Click Me</button>
+    <img id="image" src="https://www.w3schools.com/js/bulboff.gif" alt="BulbOff" onmousedown="bulbOn()" onmouseup="bulbOff()">
+    <p>Click mouse and hold down!</p>
+ </div> -->
+
+    <!-- Event Listener  -->
+
+    <div id="myDiv1">
+      <p id="p1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nisi
+        officiis officia minima earum culpa veritatis laudantium sapiente animi
+        voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        In nisi officiis officia minima earum culpa veritatis laudantium
+        sapiente animi voluptatibus.
+      </p>
+      <p id="child">Lorem ipsum dolor sit amet.</p>
+      <button id="idBtn" onclick="changePara()">Click Me</button>
+      <button id="idBtn" onclick="removeElement()">Remove</button>
+    </div>
+    <p id="demo"></p>
+
+    <!-- <button id="idBtn">click me</button> -->
+    <!-- <div id="myDiv1">
+    <h2>Bubbling:</h2>
+    <p id="myP1">Click me!</p>
+  </div><br>
+  
+  <div id="myDiv2">
+    <h2>Capturing:</h2>
+    <p id="myP2">Click me!</p>
+  </div> -->
+
+    <script src="index.js"></script>
+  </body>
+</html>

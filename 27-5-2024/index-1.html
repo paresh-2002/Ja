@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap");
+
+      html{
+        scroll-behavior: smooth;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: black;
+      }
+      .container {
+        max-width: 375px;
+        margin: auto;
+        background-color: white;
+        margin-top: 100px;
+        padding: 10px;
+        width: 100%;
+      }
+
+      .openTab {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12px;
+        gap: 25px;
+        scroll-behavior: sticky scroll;
+        
+      }
+      .tabBtn {
+        border: none;
+        padding: 10px;
+        background-color: transparent;
+        font-size: 16px;
+        color: #887979;
+      }
+
+      .tabBtn:hover {
+        color: black;
+      }
+
+      .profile-pic {
+        margin-top: 5px;
+      }
+
+      .post-header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      .comment {
+        margin: 15px 0;
+      }
+      .post-action {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-top: 10px;
+      }
+      .post-description {
+        font-size: 12px;
+      }
+      .likes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+      }
+      .bottom-navbar {
+        margin-top: 40px;
+        z-index: 10px;
+        scroll-behavior: sticky;
+      }
+      .line {
+        background-color: black;
+        width: 134px;
+        height: 5px;
+        margin: 35px 110px;
+      }
+      .bottom-navbar ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .profile-info {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 12px;
+      }
+     
+      .time{
+        font-size:12px;
+        color: #828282;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <div class="openTab">
+          <button class="tabBtn" onclick="openTab('following')">
+            Following
+          </button>
+          <button class="tabBtn" onclick="openTab('for_you')">For you</button>
+          <button class="tabBtn" onclick="openTab('favorites')">
+            Favorites
+          </button>
+        </div>
+        <section id="following" class="profile-details">
+            <div class="profile-info">
+              <div class="profile-pic">
+                <img src="./images/Icons/Profile image.png" alt="Profile picture" />
+              </div>
+              <div>
+                <div class="post-header">
+                  <div class="meta-data">
+                    <p><strong>Helena</strong> in Group name</p>
+                    <p class="time">3 min ago</p>
+                  </div>
+                  <div class="union-icon">
+                    <a href="#"><img src="./Images/Icons/Union.png" alt="Union Icon" /></a>
+                  </div>
+                </div>
+                <div class="flower-img">
+                  <img src="./Images/flower.png" alt="Flower Pic" />
+                </div>
+                <div class="comment">
+                  <div class="post-description">
+                    <p>Post Description</p>
+                  </div>
+                  <div class="post-action">
+                    <div class="likes">
+                      <img src="./Images/Icons/heart.png" alt="Heart Pic" />
+                      <p>21 Like</p>
+                    </div>
+                    <div class="likes">
+                      <img
+                        src="./Images/Icons/message-square.png"
+                        alt="message-square Pic"
+                      />
+                      <p>4 comments</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profile-info">
+              <div class="profile-pic">
+                <img src="./images/Icons/Avatar.png" alt="Profile picture" />
+              </div>
+              <div>
+                <div class="post-header">
+                  <div class="meta-data">
+                    <p><strong>Helena</strong> in Group name</p>
+                    <p class="time">3 min ago</p>
+                  </div>
+                  <div class="union-icon">
+                    <a href="#"><img src="./Images/Icons/Union.png" alt="Union Icon" /></a>
+                  </div>
+                </div>
+                <div>
+                  <div class="comment">
+                    <div class="post-description">
+                      <p>
+                        Body text for a post. Since it’s a social app, sometimes
+                        it’s a hot take, and sometimes it’s a question.
+                      </p>
+                    </div>
+                    <div class="post-action">
+                      <div class="likes">
+                        <img src="./Images/Icons/heart.png" alt="Heart Pic" />
+                        <p>6 Like</p>
+                      </div>
+                      <div class="likes">
+                        <img
+                          src="./Images/Icons/message-square.png"
+                          alt="message-square Pic"
+                        />
+                        <p>18 comments</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section id="for_you" class="profile-details">
+            <div class="profile-info">
+              <div class="profile-pic">
+                <img src="./images/Icons/Profile image.png" alt="Profile picture" />
+              </div>
+              <div>
+                <div class="post-header">
+                  <div class="meta-data">
+                    <p><strong>Helena</strong> in Group name</p>
+                    <p class="time">3 min ago</p>
+                  </div>
+                  <div class="union-icon">
+                    <a href="#"><img src="./Images/Icons/Union.png" alt="Union Icon" /></a>
+                  </div>
+                </div>
+                <div class="flower-img">
+                  <img src="./Images/city.jpeg" alt="Flower Pic" />
+                </div>
+                <div class="comment">
+                  <div class="post-description">
+                    <p>Post Description</p>
+                  </div>
+                  <div class="post-action">
+                    <div class="likes">
+                      <img src="./Images/Icons/heart.png" alt="Heart Pic" />
+                      <p>21 Like</p>
+                    </div>
+                    <div class="likes">
+                      <img
+                        src="./Images/Icons/message-square.png"
+                        alt="message-square Pic"
+                      />
+                      <p>4 comments</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profile-info">
+              <div class="profile-pic">
+                <img src="./images/Icons/Avatar.png" alt="Profile picture" />
+              </div>
+              <div>
+                <div class="post-header">
+                  <div class="meta-data">
+                    <p><strong>Helena</strong> in Group name</p>
+                    <p class="time">3 min ago</p>
+                  </div>
+                  <div class="union-icon">
+                    <a href="#"><img src="./Images/Icons/Union.png" alt="Union Icon" /></a>
+                  </div>
+                </div>
+                <div>
+                  <div class="comment">
+                    <div class="post-description">
+                      <p>
+                        Body text for a post. Since it’s a social app, sometimes
+                        it’s a hot take, and sometimes it’s a question.
+                      </p>
+                    </div>
+                    <div class="post-action">
+                      <div class="likes">
+                        <img src="./Images/Icons/heart.png" alt="Heart Pic" />
+                        <p>6 Like</p>
+                      </div>
+                      <div class="likes">
+                        <img
+                          src="./Images/Icons/message-square.png"
+                          alt="message-square Pic"
+                        />
+                        <p>18 comments</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section id="favorites" class="profile-details">
+            <div class="profile-info">
+              <div class="profile-pic">
+                <img
+                  src="./images/Icons/Profile image.png"
+                  alt="Profile picture"
+                />
+              </div>
+              <div>
+                <div class="post-header">
+                  <div class="meta-data">
+                    <p><strong>Helena</strong> in Group name</p>
+                    <p class="time">3 min ago</p>
+                  </div>
+                  <div class="union-icon">
+                    <a href="#"><img src="./Images/Icons/Union.png" alt="Union Icon" /></a>
+                  </div>
+                </div>
+                <div class="flower-img">
+                  <img src="./Images/man.png" alt="Flower Pic" />
+                </div>
+                <div class="comment">
+                  <div class="post-description">
+                    <p>Post Description</p>
+                  </div>
+                  <div class="post-action">
+                    <div class="likes">
+                      <img src="./Images/Icons/heart.png" alt="Heart Pic" />
+                      <p>21 Like</p>
+                    </div>
+                    <div class="likes">
+                      <img
+                        src="./Images/Icons/message-square.png"
+                        alt="message-square Pic"
+                      />
+                      <p>4 comments</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profile-info">
+              <div class="profile-pic">
+                <img src="./images/Icons/Avatar.png" alt="Profile picture" />
+              </div>
+              <div>
+                <div class="post-header">
+                  <div class="meta-data">
+                    <p><strong>Helena</strong> in Group name</p>
+                    <p class="time">3 min ago</p>
+                  </div>
+                  <div class="union-icon">
+                    <a href="#"><img src="./Images/Icons/Union.png" alt="Union Icon" /></a>
+                  </div>
+                </div>
+                <div>
+                  <div class="comment">
+                    <div class="post-description">
+                      <p>
+                        Body text for a post. Since it’s a social app, sometimes
+                        it’s a hot take, and sometimes it’s a question.
+                      </p>
+                    </div>
+                    <div class="post-action">
+                      <div class="likes">
+                        <img src="./Images/Icons/heart.png" alt="Heart Pic" />
+                        <p>6 Like</p>
+                      </div>
+                      <div class="likes">
+                        <img
+                          src="./Images/Icons/message-square.png"
+                          alt="message-square Pic"
+                        />
+                        <p>18 comments</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <nav class="bottom-navbar">
+          <ul>
+            <li><img src="./Images/Icons/home.png" alt="Home" /></li>
+            <li><img src="./Images/Icons/search.png" alt="Search" /></li>
+            <li><img src="./Images/Icons/create.png" alt="Create" /></li>
+            <li><img src="./Images/Icons/bell.png" alt="Bell" /></li>
+            <li>
+              <img
+                src="./Images/Icons/Profile image.png"
+                alt="Profile"
+                class="av-profile"
+              />
+            </li>
+          </ul>
+        </nav>
+        <div class="line"></div>
+      </footer>
+    </div>
+
+    <script>
+      function openTab(ProfileName) {
+        var i;
+        var x = document.getElementsByClassName("profile-details");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(ProfileName).style.display = "block";
+      }
+    </script>
+  </body>
+</html>
